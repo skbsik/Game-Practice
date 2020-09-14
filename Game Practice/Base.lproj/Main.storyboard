@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Game_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raS-dO-fgy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfx-9U-u1f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Очки: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkZ-lG-D4Q">
+                                <rect key="frame" x="0.0" y="44" width="414" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pfx-9U-u1f" firstAttribute="leading" secondItem="9a7-a6-AJ5" secondAttribute="leading" id="9ku-Ol-tFt"/>
+                            <constraint firstItem="9a7-a6-AJ5" firstAttribute="trailing" secondItem="dkZ-lG-D4Q" secondAttribute="trailing" id="Af5-XZ-gFp"/>
+                            <constraint firstItem="dkZ-lG-D4Q" firstAttribute="leading" secondItem="9a7-a6-AJ5" secondAttribute="leading" id="HKk-Ba-rdF"/>
+                            <constraint firstItem="pfx-9U-u1f" firstAttribute="trailing" secondItem="9a7-a6-AJ5" secondAttribute="trailing" id="VKP-41-EBi"/>
+                            <constraint firstItem="dkZ-lG-D4Q" firstAttribute="top" secondItem="9a7-a6-AJ5" secondAttribute="top" id="Xjg-B3-EvL"/>
+                            <constraint firstItem="pfx-9U-u1f" firstAttribute="bottom" secondItem="9a7-a6-AJ5" secondAttribute="bottom" id="eBf-20-da7"/>
+                            <constraint firstItem="pfx-9U-u1f" firstAttribute="top" secondItem="9a7-a6-AJ5" secondAttribute="top" id="fxA-0I-FcA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9a7-a6-AJ5"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="pfx-9U-u1f" id="Ryc-xf-9Kf"/>
+                        <outlet property="scoreLabel" destination="dkZ-lG-D4Q" id="5D6-Na-ihF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="119"/>
+        </scene>
+    </scenes>
+</document>
